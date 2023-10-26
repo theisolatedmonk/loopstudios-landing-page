@@ -25,7 +25,7 @@ export default function ImageBlock({ }: Props) {
                         height={100}
                         className='w-full'
                     />
-                    <p className="absolute text-white shadow-md font-JosefinSans z-10 text-[35px] p-10 top-0 w-60 -left-5">{icon.imgName}</p>
+                    <p className="absolute text-white > font-JosefinSans z-10 text-[35px] p-10 top-0 w-60 -left-5">{icon.imgName}</p>
                 </div>
             ))}
 
