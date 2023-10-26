@@ -8,10 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+ 
+fontFamily: {Montserrat:['Montserrat', 'sans-serif'],
+JosefinSans:['Josefin Sans', 'sans-serif']},
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      colors :{
+        white: "hsl(0, 0%, 100%)",
+        black: "hsl(0, 0%, 0%)",
+        darkGray: "hsl(0, 0%, 55%)",
+        veryDarkGray: "hsl(0, 0%, 41%)"
       },
     },
   },
