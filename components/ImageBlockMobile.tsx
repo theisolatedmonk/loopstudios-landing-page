@@ -13,7 +13,7 @@ const mobileImgs = [
     { imgName: 'MAKE IT FISHEYE', src: '/images/mobile/image-fisheye.jpg', alt: 'fisheye' },
 ]
 
-export default function ImageBlock({ }: Props) {
+export default function ImageBlockMobile({ }: Props) {
     return (
         <div className="flex flex-col items-center gap-2 w-full p-4">
             {mobileImgs.map((icon) => (
@@ -25,7 +25,7 @@ export default function ImageBlock({ }: Props) {
                         height={100}
                         className='w-full'
                     />
-                    <p className="absolute text-white > font-JosefinSans z-10 text-[35px] p-10 top-0 w-60 -left-5">{icon.imgName}</p>
+                    <p className="absolute text-white > font-JosefinSans z-10 text-[30px] p-10 top-0 w-60 -left-5">{icon.imgName}</p>
                 </div>
             ))}
 
