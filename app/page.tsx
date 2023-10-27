@@ -11,11 +11,11 @@ import interactiveDesktop from '@/public/images/desktop/image-interactive.jpg'
 import ImageBlockDesktop from '@/components/ImageBlockDesktop'
 
 const navItem = [
-  { title: 'ABOUT', href: '/' },
-  { title: 'CAREERS', href: '/' },
-  { title: 'EVENTS', href: '/' },
-  { title: 'PRODUCTS', href: '/' },
-  { title: 'SUPPORT', href: '/' }]
+  { title: 'About', href: '/' },
+  { title: 'Careers', href: '/' },
+  { title: 'Events', href: '/' },
+  { title: 'Products', href: '/' },
+  { title: 'Support', href: '/' }]
 
 const socialMediaIcon = [
   { src: '/images/icon-facebook.svg', href: '/', alt: 'facebook' },
@@ -49,24 +49,24 @@ export default function Home() {
       </div>
       <div className="flex flex-col sm:relative h-screen">
         <Image src={interactiveMobile} alt={''} className='w-full p-4 mt-14 sm:hidden  ' width={100} height={100} quality={100} />
-        <div className="sm:relative  flex flex-col">
-          <Image src={interactiveDesktop} alt={''} className='w-[50%] p-4 mt-14 left-20 sm:flex hidden sm:absolute' width={100} height={100} quality={100} />
+        <div className="  w-[50%] flex-col sm:flex hidden sm:absolute p-4 mt-14 left-20 bottom-0">
+          <Image src={interactiveDesktop} alt={''} className='w-full ' width={100} height={100} quality={100} />
         </div>
-        <div className="flex flex-col p-12 text-center gap-4  text-sm font-JosefinSans sm:w-[55%] sm:top-48 sm:bg-white sm:absolute sm:left-[480px] sm:p-14 sm:text-left">
-          <div className='   text-4xl  '>THE LEADER IN INTTERACTIVE VR </div>
-          <p className="font-JosefinSans font-semibold text-darkGray text-lg">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand. </p>
+        <div className="flex flex-col p-12 text-center gap-4  text-sm font-JosefinSans sm:w-[51%] sm:bottom-0 sm:bg-white sm:absolute sm:left-[500px]  sm:text-left  sm:px-[85px] sm:p-10 ">
+          <div className='   text-4xl '>THE LEADER IN INTTERACTIVE VR </div>
+          <p className=" font-JosefinSans font-semibold text-darkGray sm:text-sm text-lg">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand. </p>
         </div>
       </div>
-      <div className="flex flex-col w-full items-center gap-8 mt-2">
+      <div className="flex flex-col w-full items-center gap-8 sm:mt-10">
         <div className="flex justify-center sm:justify-between sm:px-[90px] w-full  items-center">
           <div className='   text-4xl text-center font-JosefinSans  '>OUR CREATIONS</div>
-          <button className="border-2 p-2 px-8 text-center border-black justify-center font-JosefinSans font-semibold w-36 sm:flex hidden ">SEE ALL</button>
+          <button className="border-2 p-2 px-8 text-center border-black justify-center font-JosefinSans font-semibold w-36 sm:flex hidden hover:bg-black hover:text-white ">SEE ALL</button>
         </div>
 
         <div className="flex flex-col w-full justify-center items-center sm:hidden"><ImageBlockMobile />
-          <button className="border-2 p-2 px-8 text-center border-black justify-center font-JosefinSans font-semibold w-36 ">SEE ALL</button>
+          <button className="border-2 p-2 px-8 text-center border-black justify-center font-JosefinSans font-semibold w-36  hover:bg-black hover:text-white">SEE ALL</button>
         </div>
-        <div className="w-full sm:flex hidden"><ImageBlockDesktop /></div>
+        <div className="w-full sm:flex hidden p-12"><ImageBlockDesktop /></div>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between bg-black text-white items-center gap-10 p-10 mt-10 font-semibold font-JosefinSans sm:px-20">
         <div className="flex flex-col gap-4">
