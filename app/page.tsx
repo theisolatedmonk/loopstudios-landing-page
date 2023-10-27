@@ -68,16 +68,20 @@ export default function Home() {
         </div>
         <div className="w-full sm:flex hidden"><ImageBlockDesktop /></div>
       </div>
-      <div className="flex flex-col bg-black text-white items-center gap-10 p-10 mt-10 font-semibold font-JosefinSans">
-        <Image src={'/images/logo.svg'} alt={'/images/logo.svg'} width={140} height={140} className='' />
-        <ul className="flex gap-4 flex-col items-center justify-center ">
+      <div className="flex flex-col sm:flex-row sm:justify-between bg-black text-white items-center gap-10 p-10 mt-10 font-semibold font-JosefinSans sm:px-20">
+        <div className="flex flex-col gap-4">
+          <Link href={'/'}>
+            <Image src={'/images/logo.svg'} alt={'/images/logo.svg'} width={140} height={140} className='' />
+          </Link>
+          <ul className="flex gap-4 flex-col sm:flex-row items-center justify-center ">
 
-          {navItem.map((item, index) => (<Link className='cursor-pointer' href={item.href}> <tr>{item.title}</tr></Link>))}
-        </ul>
+            {navItem.map((item, index) => (<Link className='cursor-pointer text-sm' href={item.href}> <tr>{item.title}</tr></Link>))}
+          </ul>
+        </div>
 
-        <div className="flex flex-col items-center gap-4 ">
+        <div className="flex flex-col items-center gap-4 sm:items-end ">
           <div className="flex  gap-4 items-center ">
-            {socialMediaIcon.map((item, index) => (<Link href={item.href}>   <Image src={item.src} alt={item.alt} width={30} height={30} className='' /></Link>))}
+            {socialMediaIcon.map((item, index) => (<Link href={item.href}>   <Image src={item.src} alt={item.alt} width={30} height={30} className='w-5' /></Link>))}
 
           </div>
 

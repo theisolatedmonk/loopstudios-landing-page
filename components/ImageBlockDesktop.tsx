@@ -7,7 +7,7 @@ const mobileImgs = [
     { imgName: 'DEEP EARTH', src: '/images/desktop/image-deep-earth.jpg', alt: 'earth' },
     { imgName: 'NIGHT ARCADE ', src: '/images/desktop/image-night-arcade.jpg', alt: 'arcade' },
     { imgName: 'SOCCER TEAM VR', src: '/images/desktop/image-soccer-team.jpg', alt: 'soccer' },
-    { imgName: 'THE GRID ', src: '/images/desktop/image-grid.jpg', alt: 'grid' },
+    { imgName: 'THE  GRID ', src: '/images/desktop/image-grid.jpg', alt: 'grid' },
     { imgName: 'FROM UP ABOVE VR', src: '/images/desktop/image-from-above.jpg', alt: 'above' },
     { imgName: 'POCKET BOREALIS', src: '/images/desktop/image-pocket-borealis.jpg', alt: 'borealis' },
     { imgName: 'THE CURIOSITY', src: '/images/desktop/image-curiosity.jpg', alt: 'curiosity' },
@@ -26,7 +26,7 @@ export default function ImageBlockDesktop({ }: Props) {
                         height={100}
                         className='w-full'
                     />
-                    <p className="absolute text-white  font-JosefinSans z-10 text-[25px] p-10 top-64 w-60 left-2">{icon.imgName}</p>
+                    <p className="absolute text-white  font-JosefinSans z-10 text-[25px] p-10 top-[250px] w-[220px] -left-6">{icon.imgName}</p>
                 </div>
             ))}
 
