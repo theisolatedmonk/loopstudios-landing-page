@@ -27,15 +27,15 @@ const socialMediaIcon = [
 export default function Home() {
   const [open, setOpen] = useState(false)
   return (
-    <div className="flex flex-col relative ">
+    <div className="flex flex-col relative shadow-md ">
 
-      <Image src={heroMobile} alt={''} className='w-full sm:hidden' width={100} height={100} />
-      <Image src={heroDesktop} alt={''} className='w-full hidden sm:flex' width={100} height={100} />
+      <Image src={heroMobile} alt={''} className='w-full sm:hidden' width={100} height={100} quality={100} />
+      <Image src={heroDesktop} alt={''} className='w-full hidden sm:flex' width={100} height={100} quality={100} />
       <div className="flex flex-col gap-40  p-8 text-white top-4 absolute w-full h-screen ">
         <div className="flex justify-between w-full z-30 sm:px-12">
-          <Link href={'/'}>   <Image src={'/images/logo.svg'} alt={'/images/logo.svg'} width={140} height={140} className='' /></Link>
-          <Image src={hamburger} alt={'/images/logo.svg'} width={30} height={30} className={`${open ? 'hidden' : 'flex'} sm:hidden`} onClick={() => setOpen(true)} />
-          <Image src={'/images/icon-close.svg'} alt={'close'} width={30} height={30} className={`${open ? 'flex' : 'hidden'}`} onClick={() => setOpen(false)} />
+          <Link href={'/'}>   <Image src={'/images/logo.svg'} alt={'/images/logo.svg'} width={140} height={140} quality={100} className='' /></Link>
+          <Image src={hamburger} alt={'/images/logo.svg'} width={30} height={30} quality={100} className={`${open ? 'hidden' : 'flex'} sm:hidden`} onClick={() => setOpen(true)} />
+          <Image src={'/images/icon-close.svg'} alt={'close'} width={30} height={30} quality={100} className={`${open ? 'flex' : 'hidden'}`} onClick={() => setOpen(false)} />
 
           <ul className="sm:flex gap-2 text-sm   items-center justify-center hidden">
 
@@ -48,9 +48,9 @@ export default function Home() {
 
       </div>
       <div className="flex flex-col sm:relative h-screen">
-        <Image src={interactiveMobile} alt={''} className='w-full p-4 mt-14 sm:hidden  ' width={100} height={100} />
+        <Image src={interactiveMobile} alt={''} className='w-full p-4 mt-14 sm:hidden  ' width={100} height={100} quality={100} />
         <div className="sm:relative  flex flex-col">
-          <Image src={interactiveDesktop} alt={''} className='w-[50%] p-4 mt-14 left-20 sm:flex hidden sm:absolute' width={100} height={100} />
+          <Image src={interactiveDesktop} alt={''} className='w-[50%] p-4 mt-14 left-20 sm:flex hidden sm:absolute' width={100} height={100} quality={100} />
         </div>
         <div className="flex flex-col p-12 text-center gap-4  text-sm font-JosefinSans sm:w-[55%] sm:top-48 sm:bg-white sm:absolute sm:left-[480px] sm:p-14 sm:text-left">
           <div className='   text-4xl  '>THE LEADER IN INTTERACTIVE VR </div>
@@ -71,7 +71,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row sm:justify-between bg-black text-white items-center gap-10 p-10 mt-10 font-semibold font-JosefinSans sm:px-20">
         <div className="flex flex-col gap-4">
           <Link href={'/'}>
-            <Image src={'/images/logo.svg'} alt={'/images/logo.svg'} width={140} height={140} className='' />
+            <Image src={'/images/logo.svg'} alt={'/images/logo.svg'} width={140} height={140} quality={100} className='' />
           </Link>
           <ul className="flex gap-4 flex-col sm:flex-row items-center justify-center ">
 
@@ -81,7 +81,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center gap-4 sm:items-end ">
           <div className="flex  gap-4 items-center ">
-            {socialMediaIcon.map((item, index) => (<Link href={item.href}>   <Image src={item.src} alt={item.alt} width={30} height={30} className='w-5' /></Link>))}
+            {socialMediaIcon.map((item, index) => (<Link href={item.href}>   <Image src={item.src} alt={item.alt} width={30} height={30} quality={100} className='w-5' /></Link>))}
 
           </div>
 

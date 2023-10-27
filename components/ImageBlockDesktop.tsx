@@ -16,14 +16,15 @@ const mobileImgs = [
 
 export default function ImageBlockDesktop({ }: Props) {
     return (
-        <div className="flex flex-wrap justify-center items-center gap-4 w-full p- px-10 ">
+        <div className="grid grid-cols-4 justify-center items-center gap-4 w-full p- px-10 ">
             {mobileImgs.map((icon) => (
-                <div className="relative w-[220px]">
+                <div className="relative w-auto">
                     <Image key={icon.alt}
                         src={icon.src}
                         alt={icon.alt}
                         width={100}
                         height={100}
+                        quality={100}
                         className='w-full'
                     />
                     <p className="absolute text-white  font-JosefinSans z-10 text-[25px] p-10 top-[250px] w-[220px] -left-6">{icon.imgName}</p>

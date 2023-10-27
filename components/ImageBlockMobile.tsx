@@ -23,9 +23,10 @@ export default function ImageBlockMobile({ }: Props) {
                         alt={icon.alt}
                         width={100}
                         height={100}
+                        quality={100}
                         className='w-full'
                     />
-                    <p className="absolute text-white > font-JosefinSans z-10 text-[30px] p-10 top-0 w-60 -left-5">{icon.imgName}</p>
+                    <p className="absolute text-white  font-JosefinSans z-10 text-[30px] p-10 top-0 w-60 -left-5">{icon.imgName}</p>
                 </div>
             ))}
 
